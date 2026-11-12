@@ -2,7 +2,6 @@ public static class RotationalCipher
 {
     public static string Rotate(string text, int shiftKey)
     {
-        // Приводимо ключ до діапазону 0..25 (захист від ROT26 та від'ємних значень)
         int shift = ((shiftKey % 26) + 26) % 26;
         var result = new char[text.Length];
         for (int i = 0; i < text.Length; i++)
@@ -18,7 +17,7 @@ public static class RotationalCipher
             }
             else
             {
-                result[i] = c; // пробіли, цифри, розділові знаки не змінюються
+                result[i] = c;
             }
         }
         return new string(result);
