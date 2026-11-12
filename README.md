@@ -2,7 +2,7 @@
 
 Self-study assignment: 5 medium and 5 hard exercises from the [Exercism C# track](https://exercism.org/tracks/csharp/exercise).
 
-**Author:** Chernushych Daniil, FIT 2-5
+**Author:** Chernushych Daniil, FIT 2-5, SUTE, KYIV
 
 ## Medium
 
