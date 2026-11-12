@@ -5,7 +5,6 @@ public class Clock : IEquatable<Clock>
     private readonly int _totalMinutes;
     public Clock(int hours, int minutes)
     {
-        // Переводимо все в хвилини і "загортаємо" в межах доби (0..1439)
         long total = (long)hours * 60 + minutes;
         _totalMinutes = (int)(((total % MinutesPerDay) + MinutesPerDay) % MinutesPerDay);
     }
@@ -17,7 +16,6 @@ public class Clock : IEquatable<Clock>
     {
         return new Clock(0, _totalMinutes - minutesToSubtract);
     }
-    // Два годинники рівні, якщо показують той самий час
     public bool Equals(Clock other)
     {
         return other != null && _totalMinutes == other._totalMinutes;
@@ -30,7 +28,6 @@ public class Clock : IEquatable<Clock>
     {
         return _totalMinutes.GetHashCode();
     }
-    // Формат "08:05", "00:00", "23:59"
     public override string ToString()
     {
         return $"{_totalMinutes / 60:00}:{_totalMinutes % 60:00}";
