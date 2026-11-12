@@ -1,6 +1,6 @@
 # Exercism C# Solutions
 
-Self-study assignment: 5 medium and 5 hard exercises from the [Exercism C# track](https://exercism.org/tracks/csharp/exercises).
+Self-study assignment: 5 medium and 5 hard exercises from the [Exercism C#](https://exercism.org/tracks/csharp/exercises).
 
 **Author:** Chernushych Daniil, FIT 2-5, SUTE, KYIV
 
